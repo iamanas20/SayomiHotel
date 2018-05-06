@@ -95,3 +95,5 @@ Route::get('/Logout', 'PagesController@Logout');
 Route::get('/EditProfile', 'PagesController@EditProfile');
 
 Route::post('/modifyTheProfileForReal/{userID}', 'PagesController@ModifyTheProfileForReal');
+
+// Add confirmation route!
