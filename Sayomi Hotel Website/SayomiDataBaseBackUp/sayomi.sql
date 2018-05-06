@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2018 at 02:35 PM
+-- Generation Time: May 06, 2018 at 02:55 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -270,10 +270,8 @@ INSERT INTO `rooms` (`roomID`, `description`, `numberOfBeds`, `category`, `price
 (3, 'Pretty dope room right here', 3, 'Single', '410.00', 4, 1, NULL, NULL),
 (4, 'Bright and open room', 3, 'Single', '470.00', 7, 1, NULL, NULL),
 (5, 'Crispy and dope room', 3, 'Double', '450.00', 5, 0, NULL, NULL),
-(7, 'Dope and top of the line right there', 3, 'Dashboard', '427.00', 4, 0, NULL, NULL),
-(8, 'Pretty good room, very bright', 4, 'Single', '437.00', 8, 0, NULL, NULL),
-(39, 'pretty dope stuff, pretty good', 2, '', '2.00', 1, 0, '2018-05-03 12:55:09', '2018-05-03 12:55:09'),
-(40, 'spacious and big room', 2, '', '2.00', 1, 0, '2018-05-03 20:46:30', '2018-05-03 20:46:30');
+(7, 'Dope and top of the line right there', 3, 'Single', '427.00', 4, 0, NULL, NULL),
+(8, 'Pretty good room, very bright', 4, 'Single', '437.00', 8, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -527,7 +525,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `rooms`
 --
 ALTER TABLE `rooms`
-  MODIFY `roomID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `roomID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `room_bookings`
@@ -545,7 +543,7 @@ ALTER TABLE `room_pictures`
 -- AUTO_INCREMENT for table `suites`
 --
 ALTER TABLE `suites`
-  MODIFY `suiteID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `suiteID` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `suite_bookings`
