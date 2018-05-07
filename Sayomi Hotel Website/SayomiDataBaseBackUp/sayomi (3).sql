@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2018 at 02:55 AM
+-- Generation Time: May 07, 2018 at 05:03 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -289,6 +289,7 @@ CREATE TABLE `room_bookings` (
   `persons` int(11) NOT NULL,
   `price` decimal(8,2) NOT NULL,
   `code` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `confirmed` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -297,11 +298,11 @@ CREATE TABLE `room_bookings` (
 -- Dumping data for table `room_bookings`
 --
 
-INSERT INTO `room_bookings` (`id`, `roomID`, `guestID`, `bookDate`, `beginStayDate`, `nights`, `persons`, `price`, `code`, `created_at`, `updated_at`) VALUES
-(21, 4, 147, '2018-05-04 08:18:07', '2018-05-25', 2, 3, '940.00', '675431Q61002339', '2018-05-04 08:18:07', '2018-05-04 08:18:07'),
-(22, 4, 148, '2018-05-04 08:18:08', '2018-05-25', 2, 3, '940.00', '2131660098T7531', '2018-05-04 08:18:08', '2018-05-04 08:18:08'),
-(23, 3, 150, '2018-05-04 09:19:51', '2018-05-12', 2, 3, '820.00', '253002D05055746', '2018-05-04 09:19:51', '2018-05-04 09:19:51'),
-(24, 3, 151, '2018-05-04 09:20:52', '2018-05-12', 2, 3, '820.00', '9061929213Z0110', '2018-05-04 09:20:52', '2018-05-04 09:20:52');
+INSERT INTO `room_bookings` (`id`, `roomID`, `guestID`, `bookDate`, `beginStayDate`, `nights`, `persons`, `price`, `code`, `confirmed`, `created_at`, `updated_at`) VALUES
+(21, 4, 147, '2018-05-07 13:53:32', '2018-05-25', 2, 3, '940.00', '675431Q61002339', 'Confirmed', '2018-05-04 08:18:07', '2018-05-07 12:53:32'),
+(22, 4, 148, '2018-05-07 13:53:39', '2018-05-25', 2, 3, '940.00', '2131660098T7531', 'Confirmed', '2018-05-04 08:18:08', '2018-05-07 12:53:39'),
+(23, 3, 150, '2018-05-06 23:11:13', '2018-05-12', 2, 3, '820.00', '253002D05055746', 'Non Confirmed', '2018-05-04 09:19:51', '2018-05-04 09:19:51'),
+(24, 3, 151, '2018-05-06 23:11:15', '2018-05-12', 2, 3, '820.00', '9061929213Z0110', 'Non Confirmed', '2018-05-04 09:20:52', '2018-05-04 09:20:52');
 
 -- --------------------------------------------------------
 
@@ -404,6 +405,7 @@ CREATE TABLE `suite_bookings` (
   `nights` int(11) NOT NULL,
   `price` decimal(8,2) NOT NULL,
   `code` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `confirmed` varchar(40) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -412,8 +414,8 @@ CREATE TABLE `suite_bookings` (
 -- Dumping data for table `suite_bookings`
 --
 
-INSERT INTO `suite_bookings` (`id`, `suiteID`, `guestID`, `bookDate`, `beginStayDate`, `nights`, `price`, `code`, `created_at`, `updated_at`) VALUES
-(2, 1, 149, '2018-05-04 09:34:41', '2018-05-11 00:00:00', 3, '7200.00', '2P9300932978266', '2018-05-04 08:34:41', '2018-05-04 08:34:41');
+INSERT INTO `suite_bookings` (`id`, `suiteID`, `guestID`, `bookDate`, `beginStayDate`, `nights`, `price`, `code`, `confirmed`, `created_at`, `updated_at`) VALUES
+(2, 1, 149, '2018-05-04 09:34:41', '2018-05-11 00:00:00', 3, '7200.00', '2P930093297826', 'Non Confirmed', '2018-05-04 08:34:41', '2018-05-04 08:34:41');
 
 -- --------------------------------------------------------
 
