@@ -87,15 +87,10 @@ if (isset($_SESSION["user"]))
 
 
                                         <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuTable1">
-
                                             <a class="c-dropdown__item dropdown-item" onclick="return confirm('You sure?');" href="deleteRoomBooking/{{$rb->id}}">Delete</a>
-
                                         </div>
-
                                     </div>
-
                                 </td>
-
                                 <td>
                                     @if($rb->confirmed == "Confirmed")
                                     <a class="c-btn c-btn--success" id="dropdownMenuTable1" aria-haspopup="true" aria-expanded="false">
@@ -131,6 +126,6 @@ if (isset($_SESSION["user"]))
 
 
 <script type="text/javascript">
-    history.pushState(null, '', '/SuiteBookings/show');
+    history.pushState(null, '', '/RoomBookings/show');
 </script>
 @endsection

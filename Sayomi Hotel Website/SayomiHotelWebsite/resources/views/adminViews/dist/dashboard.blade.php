@@ -1,4 +1,4 @@
-﻿@extends('adminViews.dist.adminTemplate')
+@extends('adminViews.dist.adminTemplate')
 
 @section('title')
 <h2 class="c-navbar__title">Sayomi Hotel | Dashboard</h2>
@@ -10,7 +10,11 @@
 if (isset($_SESSION["user"]))
 {
 $user = $_SESSION["user"];
+}else
+{
+    return view('adminViews/dist/index');
 }
+
 ?>
 
 <div class="container">

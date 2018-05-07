@@ -96,4 +96,6 @@ Route::get('/EditProfile', 'PagesController@EditProfile');
 
 Route::post('/modifyTheProfileForReal/{userID}', 'PagesController@ModifyTheProfileForReal');
 
-// Add confirmation route!
+Route::get('/confirm/{id}', 'PagesController@ConfirmTheRoomBooking');
+
+// Add confirmation route! and update rb, and then send email!

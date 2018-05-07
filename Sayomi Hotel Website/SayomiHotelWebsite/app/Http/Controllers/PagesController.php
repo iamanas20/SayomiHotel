@@ -849,4 +849,18 @@ class PagesController extends Controller
                 ->with('bestSuite', $bestSuite)
                 ->with('users', $users);
     }
+
+    public function ConfirmTheRoomBooking($id){
+        // update the confirmed roomBooking,
+        $roomBooking = RoomBooking::find($id);
+        $roomBooking->confirmed = "Confirmed";
+
+        $roomBooking->update();
+
+        // get back to the page!
+        $rBs = DB::select("SELECT * FROM room_Bookings");
+        session_start();
+
+        return view('adminViews/dist/roomBookings')->with('rBs', $rBs);
+    }
 }

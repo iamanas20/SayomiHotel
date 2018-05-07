@@ -74,5 +74,9 @@
     </div><!-- // .o-page -->
     <!-- Main JavaScript -->
     <script src="js/neat.min.js?v=1.0"></script>
+
+    <script type="text/javascript">
+        history.pushState(null, '', '/admin');
+    </script>
 </body>
 </html>

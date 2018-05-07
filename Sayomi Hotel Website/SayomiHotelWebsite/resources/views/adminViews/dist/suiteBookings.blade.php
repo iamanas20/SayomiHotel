@@ -113,6 +113,6 @@ $user = $_SESSION["user"];
 
 
 <script type="text/javascript">
-    history.pushState(null, '', '/RoomBookings/show');
+    history.pushState(null, '', '/SuiteBookings/show');
 </script>
 @endsection
