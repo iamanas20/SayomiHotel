@@ -133,6 +133,7 @@ class PagesController extends Controller
             $roomBooking->roomID = $id;
             $roomBooking->guestID = $guest->id;
             $roomBooking->bookDate = date("Y-m-d h:i:s");
+            $roomBooking->confirmed = "Non Confirmed";
 
             $date=date_create($request->datepicker);
 
