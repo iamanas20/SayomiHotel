@@ -47,6 +47,8 @@ $user = $_SESSION["user"];
 
                                 <th class="c-table__cell c-table__cell--head">Actions</th>
 
+                                <th class="c-table__cell c-table__cell--head">Confirmed</th>
+
                             </tr>
 
                         </thead>
@@ -87,6 +89,19 @@ $user = $_SESSION["user"];
                                         </div>
 
                                     </div>
+
+                                </td>
+
+                                <td>
+                                    @if($rb->confirmed == "Confirmed")
+                                    <a class="c-btn c-btn--success" id="dropdownMenuTable1" aria-haspopup="true" aria-expanded="false">
+                                        Confirmed
+                                    </a>
+                                    @else
+                                    <a href="/confirmSuite/{{$rb->id}}" class="c-btn c-btn--info has-icon" id="dropdownMenuTable1" aria-haspopup="true" aria-expanded="false">
+                                        Not Confirmed
+                                    </a>
+                                    @endif
 
                                 </td>
 

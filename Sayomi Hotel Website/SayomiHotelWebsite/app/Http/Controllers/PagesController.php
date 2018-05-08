@@ -216,6 +216,7 @@ class PagesController extends Controller
                 $guest->lastName = $request->Lname;
                 $guest->email = $request->email;
                 $guest->phone = $request->phone;
+                $suiteBooking->confirmed = "Non Confirmed";
 
                 $guest->save();
 
@@ -862,5 +863,19 @@ class PagesController extends Controller
         session_start();
 
         return view('adminViews/dist/roomBookings')->with('rBs', $rBs);
+    }
+
+    public function ConfirmTheSuiteBooking($id){
+        // update the confirmed roomBooking,
+        $suiteBooking = SuiteBooking::find($id);
+        $suiteBooking->confirmed = "Confirmed";
+
+        $suiteBooking->update();
+
+        // get back to the page!
+        $sBs = DB::select("SELECT * FROM suite_Bookings");
+        session_start();
+
+        return view('adminViews/dist/suiteBookings')->with('sBs', $sBs);
     }
 }
