@@ -2072,6 +2072,13 @@ input[type="color"],
     margin-top: -3px;
 }
 
+/* Remove Arrows From Date Input
+------------------------------------------------------- */
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 /* About 
 ------------------------------------------------------- */
 p.entry-content {
@@ -2119,7 +2126,7 @@ p.entry-content {
 }
 
     .avatar img {
-        margin-top: -100px;
+        margin-top: -180px;
     }
 
 @media print {

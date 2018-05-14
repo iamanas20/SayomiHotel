@@ -96,7 +96,7 @@
 
                                 <li>
                                     <div class="media-wrap">
-                                        <a href="#" class="pull-left">
+                                        <a href="/room/{{$res->roomID}}" class="pull-left">
                                             <img src="images/{{$res->url}}" width="120" alt="client" class="img-responsive" />
                                         </a>
                                         <div class="media-body">

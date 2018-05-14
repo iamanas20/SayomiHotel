@@ -29,9 +29,9 @@ Route::get('/room/{ID}', 'PagesController@BookRoom');
 
 Route::get('/suite/{ID}', 'PagesController@BookSuite');
 
-Route::get('/reservedRoom/{roomID}', 'PagesController@ReserveRoom');
+Route::post('/reservedRoom/{roomID}', 'PagesController@ReserveRoom');
 
-Route::get('/reservedSuite/{suiteID}', 'PagesController@ReserveSuite');
+Route::post('/reservedSuite/{suiteID}', 'PagesController@ReserveSuite');
 
 Route::get('/admin', 'PagesController@AdminIndex');
 

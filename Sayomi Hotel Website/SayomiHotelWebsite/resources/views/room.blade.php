@@ -55,7 +55,8 @@
                             <span id="test">Book now</span>
                         </h3>
 
-                        <form method="get" action="/reservedRoom/{{$roomToBook->roomID}}">
+                        <form method="post" action="/reservedRoom/{{$roomToBook->roomID}}">
+                            {{ csrf_field() }}
                             <div class="reservation-page-input-box">
                                 <label>First name</label>
                                 <input type="text" class="form-control" placeholder="First name" name="Fname" id="form-name" data-error="Subject field is required" required="" />
