@@ -16,71 +16,55 @@ if (isset($_SESSION["user"]))
 <div class="container">
     <div class="row">
         <div style="width: 100%; margin-top: 70px; text-align: center;" class="row text-center">
-
             <div style="width: 55%; float: right; text-align: end">
                 <h1 style="" class="text-center">Rooms</h1>
             </div>
-
             <div style="width: 45%; margin-top: 10px; text-align: end; float: right">
-
                 <h5>
                     <a class="c-btn c-btn--danger" href="/createRoom">Create a room</a>
                 </h5>
-
             </div>
+        </div>
 
+        <div class="searchAndFilterForm row">
+            <form action="/" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="searchDescription" value="" />
+
+
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
 
         <div class="row" style="margin-top: 20px; width: 100%">
-
             <div style="margin-left: 2%;" class="col-12">
-
                 <div style="width: 100%;" class="c-table-responsive@wide text-center">
-
                     <table style="width: 100%;" class="c-table ">
-
                         <thead class="c-table__head">
-
                             <tr class="c-table__row">
-
                                 <th class="c-table__cell c-table__cell--head">Room</th>
-
                                 <th class="c-table__cell c-table__cell--head">Price Per Night</th>
-
                                 <th class="c-table__cell c-table__cell--head">Category</th>
-
                                 <th class="c-table__cell c-table__cell--head">Num Of Beds</th>
-
                                 <th class="c-table__cell c-table__cell--head">Locked (0=no/1=yes)</th>
-
                                 <th class="c-table__cell c-table__cell--head">Actions</th>
-
                             </tr>
-
                         </thead>
-
-
                         <tbody>
                             @foreach($rooms as $room)
-
-
-
                             <tr class="c-table__row">
-
                                 <td class="c-table__cell">
-
                                     <div class="o-media">
-
                                         <div class="o-media__img u-mr-xsmall">
-
                                             <div class="c-avatar c-avatar--small">
-
                                                 <img class="c-avatar__img" src="{{asset('images/' . $room->url)}}" alt="Room Image" />
-
                                             </div>
-
                                         </div>
-
                                         <div class="o-media__body">
 
                                             <h6>{{$room->description}}</h6>

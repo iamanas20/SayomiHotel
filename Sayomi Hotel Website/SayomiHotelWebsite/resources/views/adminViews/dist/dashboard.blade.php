@@ -9,7 +9,7 @@
 <?php
 if (isset($_SESSION["user"]))
 {
-$user = $_SESSION["user"];
+    $user = $_SESSION["user"];
 }else
 {
     return view('adminViews/dist/index');
@@ -17,11 +17,16 @@ $user = $_SESSION["user"];
 
 ?>
 
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous" />
+
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--primary u-mb-small">
+                    <i class="fas fa-address-book"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Rooms Reservations</h3>
@@ -32,6 +37,7 @@ $user = $_SESSION["user"];
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--info u-mb-small">
+                    <i class="fas fa-address-card"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Suites Reservations</h3>
@@ -42,7 +48,7 @@ $user = $_SESSION["user"];
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--success u-mb-small">
-
+                    <i class="fas fa-dollar-sign"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Rooms revenue</h3>
@@ -53,7 +59,7 @@ $user = $_SESSION["user"];
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--warning u-mb-small">
-
+                    <i class="fas fa-dollar-sign"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Suites Revenue</h3>
@@ -63,8 +69,8 @@ $user = $_SESSION["user"];
 
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
-                <span class="c-icon c-icon--secondary u-mb-small">
-
+                <span class="c-icon c-icon--danger u-mb-small">
+                    <i class="fas fa-money-bill-alt"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Total Revenues</h3>
@@ -76,7 +82,7 @@ $user = $_SESSION["user"];
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--warning u-mb-small">
-
+                    <i class="fas fa-handshake"></i>
                 </span>
 
                 <h3 class="c-text--subtitle">Best Room</h3>
@@ -92,6 +98,7 @@ $user = $_SESSION["user"];
         <div class="col-md-6 col-xl-3">
             <div class="c-card">
                 <span class="c-icon c-icon--secondary u-mb-small">
+                    <i class="fas fa-handshake"></i>
                 </span>
                 <h3 class="c-text--subtitle">Best Suite</h3>
                 <p style="margin-top: 5px;">{{$br->description}}</p>
