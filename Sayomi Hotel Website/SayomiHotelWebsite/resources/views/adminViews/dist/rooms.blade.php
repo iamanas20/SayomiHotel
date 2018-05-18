@@ -26,7 +26,18 @@ if (isset($_SESSION["user"]))
             </div>
         </div>
 
-        
+        <div class="searchAndFilterForm row">
+            <form action="/" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="searchDescription" value="" />
+
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
         <div class="row" style="margin-top: 20px; width: 100%">
             <div style="margin-left: 2%;" class="col-12">
@@ -88,7 +99,7 @@ if (isset($_SESSION["user"]))
 
                                             <a class="c-dropdown__item dropdown-item" href="/modifyRoom/{{$room->roomID}}">Modify</a>
 
-                                            <a class="c-dropdown__item dropdown-item" onclick="return confirm('You sure?');" href=" eleteroom/{{$room->roomID}}">Delete</a>
+                                            <a class="c-dropdown__item dropdown-item" onclick="return confirm('You sure?');" href="deleteroom/{{$room->roomID}}">Delete</a>
 
                                         </div>
 

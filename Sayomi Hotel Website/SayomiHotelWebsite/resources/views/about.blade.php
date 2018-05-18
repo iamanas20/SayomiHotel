@@ -94,10 +94,9 @@
                         <h4 class="name">Anas Latique</h4>
                         <p class="position">The Don</p>
                         <div class="social-links style1">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a target="_blank" href="https://twitter.com/iamanas20"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/iamanas22"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://instagram.com/iamanas20"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
 
@@ -114,10 +113,9 @@
                         <h4 class="name">Anas Soubai</h4>
                         <p class="position">The Chef</p>
                         <div class="social-links style1">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a target="_blank" href="https://twitter.com/iamanas20"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/iamanas22"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://instagram.com/iamanas20"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
 
@@ -134,10 +132,9 @@
                         <h4 class="name">Anas Zebri</h4>
                         <p class="position">The Master</p>
                         <div class="social-links style1">
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a target="_blank" href="https://twitter.com/iamanas20"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="https://facebook.com/iamanas22"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="https://instagram.com/iamanas20"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div><!--/.flat-team-->

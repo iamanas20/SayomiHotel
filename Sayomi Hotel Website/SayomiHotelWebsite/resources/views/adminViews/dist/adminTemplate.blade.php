@@ -123,25 +123,6 @@
     <!--<script type="text/javascript">
         history.pushState(null, '', '/dashboard');
     </script>-->
-
-    <div class="row" style="margin-top: 100px;">
-        <div style="width: 100% !important; margin: auto;">
-            <div class="copyright text-center">
-                <div style="width: 100%; text-align: center;" class="copyright-content text-center">
-                    <small>
-                        Copyright © 2017. Made by
-                        <a style="color: #f78432" target="_blank" href="https://instagram.com/iamanas22"> Anas Latique</a>. All Rights Reserved
-                    </small>
-                </div>
-            </div>
-            <div style="text-align: center; margin-bottom: 20px; margin-top: 20px;">
-                <a target="_blank" href="https://instagram.com/iamanas22">
-                    <img src="{{asset('images/AnasLogo.png')}}" style="max-width: 40px; text-align: center" alt="Alternate Text" />
-                </a>
-
-            </div>
-        </div>
-    </div><!-- // .o-page -->
     <script>
         feather.replace()
     </script>

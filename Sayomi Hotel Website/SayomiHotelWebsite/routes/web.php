@@ -100,4 +100,8 @@ Route::get('/confirm/{id}', 'PagesController@ConfirmTheRoomBooking');
 
 Route::get('/confirmSuite/{id}', 'PagesController@ConfirmTheSuiteBooking');
 
+Route::get('/reserveRoomPDF/{id}', 'PagesController@DownloadRoomPDF');
+
+Route::get('/reserveSuitePDF/{id}', 'PagesController@DownloadSuitePDF');
+
 // Add confirmation route! and update rb, and then send email!

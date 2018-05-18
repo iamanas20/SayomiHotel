@@ -2138,9 +2138,6 @@ p.entry-content {
         visibility: visible;
     }
 
-    #divToPrint {
-        margin-top: 100px;
-    }
 }
 
 @media only screen and (max-width: 991px) {
