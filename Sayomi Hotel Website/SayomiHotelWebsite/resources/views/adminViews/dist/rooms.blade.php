@@ -26,18 +26,6 @@ if (isset($_SESSION["user"]))
             </div>
         </div>
 
-        <div class="searchAndFilterForm row">
-            <form action="/" method="post">
-                <table>
-                    <tr>
-                        <td>
-                            <input type="text" name="searchDescription" value="" />
-
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </div>
 
         <div class="row" style="margin-top: 20px; width: 100%">
             <div style="margin-left: 2%;" class="col-12">

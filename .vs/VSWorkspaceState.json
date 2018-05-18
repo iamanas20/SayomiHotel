@@ -9,11 +9,8 @@
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\config",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\routes"
+    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts"
   ],
-  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist\\rooms.blade.php",
+  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts\\template.blade.php",
   "PreviewInSolutionExplorer": false
 }
