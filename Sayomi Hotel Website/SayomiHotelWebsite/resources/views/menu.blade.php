@@ -106,8 +106,8 @@
                                             <span>${{$res->pricePerNight}}</span>
                                         </div>
                                         <ul class="menu-in">
-                                            <li>Max Persons</li>
-                                            <li>{{$res->maxPersons}}</li>
+                                            <li>Type</li>
+                                            <li>{{$res->category}}</li>
                                         </ul>
                                     </div>
                                 </li>
