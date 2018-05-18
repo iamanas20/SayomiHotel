@@ -90,11 +90,7 @@ if (isset($_SESSION["user"]))
 
                                         <a href="#" class="c-btn c-btn--info has-icon dropdown-toggle" id="dropdownMenuTable1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Operations
-
                                         </a>
-
-
-
                                         <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuTable1">
 
                                             <a class="c-dropdown__item dropdown-item" href="/modifyRoom/{{$room->roomID}}">Modify</a>
