@@ -70,7 +70,8 @@
     <br /><br />
         <div class="container">
             <div class="read-more view-all">
-                <button onclick="window.print();">Print</button>
+                
+                    <a href="/reserveRoomPDF/{{$roomBooking->id}}" style="color: white; font-family: Helvetica Neue, Helvetica, Arial, sans-serif;" >Get PDF</a>
             </div>
         </div>
     </div><!--container -->

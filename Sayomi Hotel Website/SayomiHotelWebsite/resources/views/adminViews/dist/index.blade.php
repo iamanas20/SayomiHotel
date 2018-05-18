@@ -54,8 +54,8 @@
         </div>
     </div>
 
-    <div class="row" style="margin-top: 100px;">
-        <div style="width: 100% !important; margin: auto;">
+    <div class="row" style="margin: 100px 0 0 0">
+        <div style="width: 100% !important; margin: 0 0 0 0;">
             <div class="copyright text-center">
                 <div style="width: 100%; text-align: center;" class="copyright-content text-center">
                     <small>
@@ -68,7 +68,6 @@
                 <a target="_blank" href="https://instagram.com/iamanas22">
                     <img src="{{asset('images/AnasLogo.png')}}" style="max-width: 40px; text-align: center" alt="Alternate Text" />
                 </a>
-
             </div>
         </div>
     </div><!-- // .o-page -->

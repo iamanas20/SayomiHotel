@@ -9,9 +9,7 @@
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\public",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist"
+    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews"
   ],
-  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist\\rooms.blade.php",
   "PreviewInSolutionExplorer": false
 }

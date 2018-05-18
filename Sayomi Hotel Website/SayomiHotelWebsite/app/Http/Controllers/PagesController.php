@@ -10,9 +10,11 @@ use App\Suite;
 use App\Guest;
 use App\RoomBooking;
 use App\Admin;
+use App\RoomPicture;
 use App\SuiteBooking;
 use DateTime;
 use \Input as Input;
+use PDF;
 
 class PagesController extends Controller
 {
@@ -879,4 +881,27 @@ class PagesController extends Controller
 
         return view('adminViews/dist/suiteBookings')->with('sBs', $sBs);
     }
+
+    public function DownloadRoomPDF($id){
+        $roomBooking = RoomBooking::find($id)->first();
+        $room = RoomBooking::where('roomID', '=', $roomBooking->roomID)->first();
+        $guest = Guest::where('id', '=', $roomBooking->guestID)->first();
+        $roomPicture = RoomPicture::where('roomID', '=', $room->roomID)->first();
+
+
+        $pdf = PDF::loadView('pdftoPrintRoom', ['roomBooking' => $roomBooking, 'room' => $room, 'guest' => $guest, 'roomPicture' => $roomPicture]);
+        return $pdf->stream('roomReserve.pdf', array('Attachment'=>0));
+    }
+
+    public function DownloadSuitePDF($id){
+        $suiteBooking = SuiteBooking::find($id)->first();
+        $suite = SuiteBooking::where('suiteID', '=', $suiteBooking->suiteID)->first();
+        $guest = Guest::where('id', '=', $suiteBooking->guestID)->first();
+        $suitePicture = SuitePicture::where('suiteID', '=', $suite->suiteID)->first();
+
+
+        $pdf = PDF::loadView('pdftoPrintSuite', ['suiteBooking' => $suiteBooking, 'suite' => $suite, 'guest' => $guest, 'suitePicture' => $suitePicture]);
+        return $pdf->stream('roomReserve.pdf', array('Attachment'=>0));
+    }
+
 }
