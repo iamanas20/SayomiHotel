@@ -260,10 +260,6 @@
                                 </ul>
                             </div><!-- /.col-md-6" -->
                         </div><!-- /.content-inner -->
-                        <div class="content-inner">
-                            <p>Coupling a blended linen construction with tailored style, the River Island HR Jasper Blazer will imprint a touch of dapper charm into your after-dark wardrobe. Our model is wearing a size medium blazer, and usually takes a size medium/38L shirt.</p>
-
-                        </div><!-- /.content-inner -->
                     </div><!-- /.content-tab -->
                 </div><!--flat-tabs-->
             </div><!--/.col-md-12-->

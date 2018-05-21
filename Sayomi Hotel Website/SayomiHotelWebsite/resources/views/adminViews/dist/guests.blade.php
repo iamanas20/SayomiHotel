@@ -16,16 +16,12 @@ if (isset($_SESSION["user"]))
 <div class="container">
     <div class="row">
         <div style="width: 100%; margin-top: 70px; text-align: center;" class="row text-center">
-
             <div style="width: 55%; float: right; text-align: end">
                 <h1 style="" class="text-center">Guests</h1>
             </div>
         </div>
-
         <div class="row" style="margin-top: 20px; width: 100%">
-
             <div style="margin-left: 2%;" class="col-12">
-
                 <div style=" width:100%" class="c-table-responsive@wide text-center">
                     <table class="c-table">
                         <thead class="c-table__head">

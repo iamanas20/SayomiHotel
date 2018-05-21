@@ -9,8 +9,9 @@
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\config",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts"
+    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews",
+    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist"
   ],
-  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts\\template.blade.php",
+  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist\\guests.blade.php",
   "PreviewInSolutionExplorer": false
 }
