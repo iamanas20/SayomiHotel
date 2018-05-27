@@ -104,6 +104,8 @@ class PagesController extends Controller
             $isValid = 0;
         }
 
+
+        //Test on max persons number
         if ($request->numberOfPersons < 0)
         {
             $isValid = 0;
