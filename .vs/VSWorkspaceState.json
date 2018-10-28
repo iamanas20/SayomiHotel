@@ -6,14 +6,11 @@
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\app",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\app\\Http",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\app\\Http\\Controllers",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\config",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews",
-    "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\layouts",
     "\\Sayomi Hotel Website\\SayomiHotelWebsite\\routes"
   ],
-  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\resources\\views\\adminViews\\dist\\rooms.blade.php",
+  "SelectedNode": "\\Sayomi Hotel Website\\SayomiHotelWebsite\\app\\Http\\Controllers\\PagesController.php",
   "PreviewInSolutionExplorer": false
 }

@@ -65,7 +65,6 @@ Route::get('/SuiteBookings/show', 'PagesController@DisplaySuiteBookings');
 
 
 
-
 Route::get('/createSuite', 'PagesController@DisplayCreateSuiteForm');
 
 Route::post('/createSuiteForReal', 'PagesController@CreateSuite');
@@ -75,7 +74,6 @@ Route::get('/modifySuite/{ruiteID}', 'PagesController@ModifySuite');
 Route::get('/deleteSuite/{suiteID}', 'PagesController@DeleteSuite');
 
 Route::post('/modifyTheSuiteForReal/{suiteID}', 'PagesController@ModifyTheSuiteForReal');
-
 
 
 

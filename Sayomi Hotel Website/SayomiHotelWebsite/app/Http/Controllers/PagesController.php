@@ -22,7 +22,7 @@ class PagesController extends Controller
         $result = DB::select('select * from rooms inner join room_pictures on rooms.roomID = room_pictures.roomID');
         $resultSuites = DB::select('select * from suites inner join suite_pictures on suites.suiteID = suite_pictures.suiteId');
         return view('welcome')->with('result', $result)->with('resultSuites', $resultSuites);
-    }
+	}
 
     public function About(){
         return view('about');
@@ -103,7 +103,6 @@ class PagesController extends Controller
         {
             $isValid = 0;
         }
-
 
         //Test on max persons number
         if ($request->numberOfPersons < 0)
@@ -716,54 +715,6 @@ class PagesController extends Controller
                 ->with('suitesRevenue', $suitesRevenue)
                 ->with('bestRoom', $bestRoom)
                 ->with('bestSuite', $bestSuite);
-    }
-
-
-    // P1 : rooms or suites...
-    // P2 : CRUD...
-    // P3 : additional parameters, maybe id...
-
-    public function BigCrud($P1, $P2, $P3){
-        switch ($P1)
-        {
-            case "room":
-                switch ($P2)
-                {
-                	case "create":
-                        break;
-
-                    case "update":
-                        break;
-
-                    case "delete":
-                        break;
-                }
-                break;
-
-            case "suites":
-                switch ($P2)
-                {
-                	case "create":
-                        break;
-
-                    case "update":
-                        break;
-
-                    case "delete":
-                        break;
-                }
-                break;
-
-            case "guests":
-                break;
-
-            case "roomBookings":
-                break;
-
-            case "suiteBookings":
-                break;
-        }
-
     }
 
     public function DisplayRooms(){
